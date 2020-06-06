@@ -50,7 +50,17 @@ public class Main {
 
   @RequestMapping("/")
   String index() {
-    return "index";
+    return "pickups";
+  }
+
+  @RequestMapping("/pickups.js")
+  String script() {
+    return "pickups.js";
+  }
+
+  @RequestMapping("/pickups.css")
+  String styles() {
+    return "pickups.css";
   }
 
   @RequestMapping("/db")
